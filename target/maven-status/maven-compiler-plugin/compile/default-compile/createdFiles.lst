@@ -1,0 +1,5 @@
+demo\file\operations\UserDetails.class
+demo\file\operations\Credentials.class
+demo\file\operations\JsonOperations.class
+demo\file\operations\ObjectMapperToReadDataFromFiles.class
+demo\file\operations\ExcelOperations.class

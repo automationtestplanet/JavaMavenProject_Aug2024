@@ -22,25 +22,29 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 public class ObjectMapperToReadDataFromFiles {
 
-	public void readDataFromJson(String filePath) {
+	public UserDetails readDataFromJson(String filePath) {
 		try {
 			ObjectMapper objMapper = new ObjectMapper();
 			UserDetails userDetails = objMapper.readValue(Paths.get(filePath).toFile(), UserDetails.class);
 			System.out.println(userDetails.getUserName());
 			System.out.println(userDetails.getPassword());
+			return userDetails;
 		} catch (Exception e) {
 			System.out.println("Exception Occured while read data from Json: " + e.getMessage());
+			return null;
 		}
 	}
 
-	public void readDataFromXml(String filePath) {
+	public Credentials readDataFromXml(String filePath) {
 		try {
 			ObjectMapper xmlMapper = new XmlMapper();
 			Credentials credentials = xmlMapper.readValue(Paths.get(filePath).toFile(), Credentials.class);
 			System.out.println(credentials.getUserName());
 			System.out.println(credentials.getPassword());
+			return credentials;
 		} catch (Exception e) {
 			System.out.println("Exception Occured while read data from MXL: " + e.getMessage());
+			return null;
 		}
 	}
 
