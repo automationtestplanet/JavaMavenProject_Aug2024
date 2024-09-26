@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="test.TestFileOperations">
+      	<methods>
+      		<include name="readDataFromJson" />
+      	</methods>
+      </class>     
+      
+      <class name="test.TestNGUnitTestCases">
+      	<methods>
+      		<include name="test4" />
+      	</methods>
+      </class>         
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Test2">
+    <classes>
+      <class name="test.TestFileOperations">
+      	<methods>
+      		<include name="readDataFromXML" />
+      	</methods>
+      </class>     
+      
+      <class name="test.TestNGUnitTestCases">
+      	<methods>
+      		<include name="test1" />
+      	</methods>
+      </class>         
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="UserName" value="Raju"/>
+    <parameter name="Job" value="Software"/>
+    <groups>
+      <run>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="test.TestNGUnitTestCases">
+      <class name="test.TestNGTestCasesExecutionOrder">
         <methods>
-          <include name="test3"/>
+          <include name="deleteUser"/>
         </methods>
-      </class> <!-- test.TestNGUnitTestCases -->
+      </class> <!-- test.TestNGTestCasesExecutionOrder -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

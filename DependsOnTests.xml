@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">	
+  <test name="Test1">   
+  
+  	<groups>  
+		<run>  
+			<include name="RegressionTest" />  
+		</run>  
+	</groups> 
+  	<parameter name="UserName" value="Raju"/>
+  	<parameter name="Job" value="Software"/>
+	
+    <classes>
+      <class name="test.TestNGTestCasesExecutionOrder">
+      	<methods>
+      		<include name="getUser" />
+      	</methods>
+      </class>         
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

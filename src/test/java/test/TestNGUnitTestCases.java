@@ -12,7 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class TestNGUnitTestCases {
+public class TestNGUnitTestCases extends TestNGBaseClass {
 
 	@Test()
 	public void test1() {
@@ -26,14 +26,13 @@ public class TestNGUnitTestCases {
 		} else {
 			System.out.println("This is Test NG Unit test case is Fail");
 		}
-
 	}
-	
+
 	@Test()
 	public void test3() {
 		Assert.assertEquals(true, 100 == 10, "This is Test NG Unit test case is Fail");
 	}
-	
+
 	@Test()
 	public void test4() {
 		Assert.assertTrue(100 == 100, "This is Test NG Unit test case is Fail");

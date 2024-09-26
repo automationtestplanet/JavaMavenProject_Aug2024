@@ -10,7 +10,7 @@ import demo.file.operations.ExcelOperations;
 import demo.file.operations.ObjectMapperToReadDataFromFiles;
 import demo.file.operations.UserDetails;
 
-public class TestFileOperations {
+public class TestFileOperations extends TestNGBaseClass {
 
 	@Test
 	public void testReadDataFromExcel() {

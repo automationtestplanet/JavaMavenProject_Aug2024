@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="test.TestNGTestCasesExecutionOrder">
+      	<methods>
+      		<include name="addUser" />
+      		<!--<exclude name="updateUser" />-->
+      		<include name="updateUser" />
+      		<include name="getUser" />      		
+      		<include name="deleteUser" />
+      	</methods>
+      </class>         
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
