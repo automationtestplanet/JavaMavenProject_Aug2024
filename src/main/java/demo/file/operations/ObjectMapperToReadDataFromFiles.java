@@ -28,6 +28,17 @@ public class ObjectMapperToReadDataFromFiles {
 			UserDetails userDetails = objMapper.readValue(Paths.get(filePath).toFile(), UserDetails.class);
 			System.out.println(userDetails.getUserName());
 			System.out.println(userDetails.getPassword());
+			
+			UserDetails2 userDetails2 = objMapper.readValue(Paths.get(filePath).toFile(), UserDetails2.class);
+			System.out.println(userDetails2.getUserName());
+			System.out.println(userDetails2.getPassword());
+			
+			userDetails2.setUserName("NewUserName");
+			userDetails2.setPassword("NewPassword");
+			
+			System.out.println(userDetails2.getUserName());
+			System.out.println(userDetails2.getPassword());
+			
 			return userDetails;
 		} catch (Exception e) {
 			System.out.println("Exception Occured while read data from Json: " + e.getMessage());
